@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChooseBackgroundColorWindow</class>
+ <widget class="QDialog" name="ChooseBackgroundColorWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>382</width>
+    <height>318</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>GroupBox</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QRadioButton" name="GreenRadioButton">
+              <property name="text">
+               <string>Green</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="BlueRadioButton">
+              <property name="text">
+               <string>Blue</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="GrayRadioButton">
+              <property name="text">
+               <string>Gray</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QRadioButton" name="PurpleRadioButton">
+              <property name="text">
+               <string>Purple</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="PinkRadioButton">
+              <property name="text">
+               <string>Pink</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="BrownRadioButton">
+              <property name="text">
+               <string>Brown</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>75</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ApplybgColor">
+            <property name="text">
+             <string>Apply</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="CancelbgColor">
+            <property name="text">
+             <string>Cancel</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+  <zorder>GreenRadioButton</zorder>
+  <zorder>BlueRadioButton</zorder>
+  <zorder>GrayRadioButton</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>groupBox</zorder>
+  <zorder></zorder>
+  <zorder></zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

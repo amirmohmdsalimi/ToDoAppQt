@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddWindow</class>
+ <widget class="QDialog" name="AddWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>710</width>
+    <height>535</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Title         </string>
+           </property>
+           <property name="buddy">
+            <cstring>lineEdit_Title</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_Title"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Description</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="textEdit_description"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+             <horstretch>25</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>Priority      </string>
+           </property>
+           <property name="buddy">
+            <cstring>comboBox_Priority</cstring>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBox_Priority">
+           <property name="iconSize">
+            <size>
+             <width>70</width>
+             <height>20</height>
+            </size>
+           </property>
+           <item>
+            <property name="text">
+             <string>High</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Average</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Low</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>495</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="minimumSize">
+            <size>
+             <width>63</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>done?      </string>
+           </property>
+           <property name="buddy">
+            <cstring>checkBox_Itsdone</cstring>
+           </property>
+          </widget>
+         </item>
+         <item alignment="Qt::AlignLeft|Qt::AlignTop">
+          <widget class="QCheckBox" name="checkBox_Itsdone">
+           <property name="text">
+            <string>CheckBox</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Maximum</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>524</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QDialogButtonBox" name="SaveNewTaskButton">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="standardButtons">
+        <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>SaveNewTaskButton</sender>
+   <signal>accepted()</signal>
+   <receiver>AddWindow</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>230</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SaveNewTaskButton</sender>
+   <signal>rejected()</signal>
+   <receiver>AddWindow</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>298</x>
+     <y>515</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SaveNewTaskButton</sender>
+   <signal>clicked(QAbstractButton*)</signal>
+   <receiver>AddWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>644</x>
+     <y>512</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>646</x>
+     <y>472</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
