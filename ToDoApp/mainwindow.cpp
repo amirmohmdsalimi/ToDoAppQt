@@ -213,6 +213,16 @@ void MainWindow::on_ReloadButton_clicked()
 {
     QString executablePath = QCoreApplication::applicationDirPath();
     QFile file(executablePath + "/JsonFile.json");
+    if (!file.exists()) {
+            if (file.open(QIODevice::WriteOnly)) {
+                QJsonObject jsonObject;
+                QJsonDocument jsonDoc(jsonObject);
+                file.write(jsonDoc.toJson());
+                file.close();
+            } else {
+                qDebug() << "Failed to create the JSON file";
+            }
+        }
     QString json_string;
     if (file.open(QIODevice::ReadOnly)) {
         json_string = file.readAll();
